@@ -1,6 +1,6 @@
 import React from "react";
 import web from "../src/Images/img1.png";
-import { NavLink } from "react-router-dom";
+
 import CommonPage1 from "./CommonPage1";
 
 const Home = () => {

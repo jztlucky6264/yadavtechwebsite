@@ -1,4 +1,3 @@
-import React from "react";
 import web from "../src/Images/card_image.jpg";
 const Sdata = [
   {

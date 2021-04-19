@@ -1,6 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import web from "../src/Images/card_image.jpg";
 import Card from "./Card";
 import Sdata from "./Sdata";
 
