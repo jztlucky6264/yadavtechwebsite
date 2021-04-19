@@ -35,7 +35,7 @@ const Contact = () => {
                 <label for="exampleFormControlInput1">FullName</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Enter your name"
                   name="fullname"
@@ -43,11 +43,11 @@ const Contact = () => {
                   onChange={InputEvent}
                 />
               </div>
-              <div class="form-group my-3">
+              <div className="form-group my-3">
                 <label for="exampleFormControlInput1">Phone</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Mobile Number"
                   name="phone"
@@ -55,11 +55,11 @@ const Contact = () => {
                   onChange={InputEvent}
                 />
               </div>
-              <div class="form-group my-3">
+              <div className="form-group my-3">
                 <label for="exampleFormControlInput1">Email address</label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="name@example.com"
                   name="email"
@@ -68,10 +68,10 @@ const Contact = () => {
                 />
               </div>
 
-              <div class="form-group my-3">
+              <div className="form-group my-3">
                 <label for="exampleFormControlTextarea1">Example</label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
                   name="msg"
