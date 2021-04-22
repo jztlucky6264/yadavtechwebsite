@@ -5,7 +5,7 @@ const Contact = () => {
     fullname: "",
     phone: "",
     email: "",
-    msg: "",
+    city: "",
   });
   const InputEvent = (event) => {
     const { name, value } = event.target;
@@ -19,7 +19,7 @@ const Contact = () => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `My Name is ${data.fullname}, My Mobile number is ${data.phone},My email is ${data.email},Here is what i want to say ${data.msg}`
+      `My Name is ${data.fullname}, My Mobile number is ${data.phone},My email is ${data.email},My city is  ${data.city}`
     );
   };
   return (
@@ -30,58 +30,104 @@ const Contact = () => {
       <div className="container contact_div">
         <div className="row ">
           <div className="col-md-6 col-1o mx-auto">
-            <form onSubmit={formSubmit}>
-              <div class="form-group  ">
-                <label for="exampleFormControlInput1">FullName</label>
+            <form
+              onSubmit={formSubmit}
+              className="row g-3 needs-validation"
+              noValidate
+            >
+              <div className="col-md-4">
+                <label htmlFor="validationCustom01" className="form-label">
+                  FullName
+                </label>
                 <input
                   type="text"
                   className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Enter your name"
                   name="fullname"
                   value={data.fullname}
                   onChange={InputEvent}
+                  id="validationCustom01"
+                  required
                 />
+                <div className="valid-feedback">Looks good!</div>
               </div>
-              <div className="form-group my-3">
-                <label for="exampleFormControlInput1">Phone</label>
+              <div className="col-md-4">
+                <label htmlFor="validationCustom02" className="form-label">
+                  Phone
+                </label>
                 <input
                   type="text"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Mobile Number"
                   name="phone"
                   value={data.phone}
                   onChange={InputEvent}
-                />
-              </div>
-              <div className="form-group my-3">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input
-                  type="email"
                   className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                  name="email"
-                  value={data.email}
-                  onChange={InputEvent}
+                  id="validationCustom02"
+                  required
                 />
+                <div className="valid-feedback">Looks good!</div>
+              </div>
+              <div className="col-md-4">
+                <label
+                  htmlFor="validationCustomUsername"
+                  className="form-label"
+                >
+                  Username
+                </label>
+                <div className="input-group has-validation">
+                  <span className="input-group-text" id="inputGroupPrepend">
+                    @
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="email"
+                    value={data.email}
+                    onChange={InputEvent}
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div className="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <label htmlFor="validationCustom03" className="form-label">
+                  City
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div className="invalid-feedback">
+                  Please provide a valid city.
+                </div>
               </div>
 
-              <div className="form-group my-3">
-                <label for="exampleFormControlTextarea1">Example</label>
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  name="msg"
-                  value={data.msg}
-                  onChange={InputEvent}
-                ></textarea>
+              <div className="col-12">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    name="city"
+                    value={data.city}
+                    onChange={InputEvent}
+                    id="invalidCheck"
+                    required
+                  />
+                  <label className="form-check-label" htmlFor="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div className="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
               </div>
               <div className="col-12">
-                <button type="submit" class="btn btn-outline-primary my-2">
-                  Submit Form
+                <button className="btn btn-primary" type="submit">
+                  Submit form
                 </button>
               </div>
             </form>
