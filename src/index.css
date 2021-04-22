@@ -13,6 +13,7 @@ code {
     monospace;
 }
 * {
+  max-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -91,9 +92,45 @@ code {
   font-weight: 500;
   font-size: 1.5rem;
 }
+.main_service {
+  height: max-content;
+  overflow: scroll;
+}
 
 @media screen and (max-width: 992px) {
   .menu_active {
     border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header h1 {
+    font-size: 28px;
+  }
+  #header h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  #header {
+    height: 80vh;
+    text-align: center;
+  }
+  #header .header-img {
+    text-align: center;
+  }
+  #header .header-img img {
+    width: 60%;
+  }
+  #content {
+    text-align: center;
   }
 }
