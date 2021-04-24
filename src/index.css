@@ -13,7 +13,6 @@ code {
     monospace;
 }
 * {
-  max-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -93,8 +92,8 @@ code {
   font-size: 1.5rem;
 }
 .main_service {
-  height: max-content;
-  overflow: scroll;
+  height: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 992px) {
