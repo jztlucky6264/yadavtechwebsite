@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <footer className="w-100 bg-light text-center  my-5 footer_sec  ">
+      <footer className="w-100 bg-light text-center  footer_sec  ">
         <p>©️ {year} YadavTech. All Rights Reserved | Terms and Conditions</p>
       </footer>
     </>

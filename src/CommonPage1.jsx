@@ -30,7 +30,7 @@ const CommonPage1 = (props) => {
                     </NavLink>
                   </div>
                 </div>
-                <div className="col-lg-6 order-1 order-lg-2 header-img">
+                <div className="col-lg-6   order-1 order-lg-2 header-img">
                   <img
                     src={props.imgsrc}
                     alt="refresh"

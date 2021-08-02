@@ -91,6 +91,7 @@ $btn-color: #3498db;
   }
 }
 .footer_sec {
+  margin-top: 10rem;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -103,9 +104,10 @@ $btn-color: #3498db;
     border-bottom: none;
   }
 }
-
-@media (max-width: 768px) {
+/* 
+@media (max-width: 320px) {
   #header {
+    height: 100%;
     margin-top: 20px;
   }
   #header h1 {
@@ -116,7 +118,25 @@ $btn-color: #3498db;
     margin-bottom: 30px;
   }
   #header .header-img img {
-    width: 80%;
+    min-width: 70vw;
+  }
+} */
+
+@media (max-width: 768px) {
+  #header {
+    height: 100%;
+    margin-top: 20px;
+  }
+  #header h1 {
+    font-size: 28px;
+  }
+  #header h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img {
+    padding-top: 12rem;
+    min-width: 55vw;
   }
 }
 
